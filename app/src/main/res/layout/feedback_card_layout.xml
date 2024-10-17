@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1890e0">
+
+        <TextView
+            android:id="@+id/hospitalName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#094ff4"
+            android:text="Hospital Name"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/hospitalName"
+            android:id="@+id/table1"
+            android:layout_marginTop="5sp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Doctor Name: "
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/doctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor Name"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/table1"
+            android:id="@+id/table5"
+            android:layout_marginTop="5sp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Contact at: "
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MobileNo"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/table5"
+            android:id="@+id/table7"
+            android:layout_marginTop="5sp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Sub-area: "
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtSubArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub-area"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/table7"
+            android:id="@+id/table8"
+            android:layout_marginTop="5sp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Area: "
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Area"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                />
+        </TableRow>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:layout_below="@id/table8">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Send Feedback"
+                android:layout_margin="5dp"
+                android:background="@drawable/button"
+                android:layout_weight="1"
+                android:id="@+id/buttonAccept"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

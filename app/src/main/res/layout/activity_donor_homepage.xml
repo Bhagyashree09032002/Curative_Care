@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background6"
+    tools:context=".DonorHomepage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tvHome"
+                android:text="Welcome Donor"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnUserRequest"
+                android:textAlignment="center"
+                android:text="View User's Request"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/tvHome"
+                android:background="@drawable/button5"
+                android:layout_centerHorizontal="true"
+                android:layout_width="180dp"
+                android:layout_height="80dp" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:textAlignment="center"
+                android:text="Logout"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button5"
+                android:layout_below="@id/btnUserRequest"
+                android:layout_centerHorizontal="true"
+                android:layout_width="150dp"
+                android:layout_height="80dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

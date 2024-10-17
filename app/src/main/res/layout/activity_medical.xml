@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".Medical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Medical Login"
+        android:textStyle="bold"
+        android:textColor="#123"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textviewheading"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/textviewheading"
+        android:layout_marginTop="30dp"
+        android:maxLines="1"
+        android:hint="Username"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:id="@+id/editTextLogUser"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Password"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:layout_below="@id/editTextLogUser"
+        android:id="@+id/editTextLogPass"
+        android:layout_marginTop="50dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLogPass"
+        android:id="@+id/linearLayout"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:background="@drawable/button"
+            android:id="@+id/buttonLogin"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/medicalChnageUserProfile"
+        android:textAlignment="center"
+        android:text="Chnage User Profile"
+        android:layout_marginTop="25dp"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

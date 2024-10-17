@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserHomepage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi! User"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:id="@+id/textviewUserhomeHeading"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:id="@+id/userHomeSearchDoctor"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:id="@+id/btnuserHomeSearchDoctor"
+                    android:background="@drawable/search"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="Search Doctor"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:id="@+id/userHomeAddReport"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:id="@+id/btnuserHomeAddReport"
+                    android:background="@drawable/add_sheet"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="Add New Report"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:id="@+id/userHomeEditProfile"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:id="@+id/btnuserHomeEditProfile"
+                    android:background="@drawable/editprofile200"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="Edit Details"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:id="@+id/userRequestAmbulance"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:id="@+id/btnRequestAmbulance"
+                    android:background="@drawable/ambulance"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="Request Ambulance"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userBloodRequest"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/blood"
+                    android:id="@+id/btnuserBloodRequest" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="Blood Request"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userHomeLogout"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="0.3"
+                    android:id="@+id/btnuserHomeLogout"
+                    android:background="@drawable/logout1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="Logout"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

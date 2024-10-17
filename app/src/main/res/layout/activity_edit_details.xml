@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit user profile"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First name:"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/editEditUserFirstName"
+                    android:layout_weight="1"
+                    android:layout_gravity="top"
+                    android:padding="8dp"
+                    android:background="@drawable/whitebar1"/>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/btnEditUserFirstName"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/smalleditbutton"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Middle name:"
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/editEditUserMiddleName"
+                    android:layout_weight="1"
+                    android:layout_gravity="top"
+                    android:padding="8dp"
+                    android:background="@drawable/whitebar1"/>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/btnEditUserMiddleName"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/smalleditbutton"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last name:"
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/editEditUserLastName"
+                    android:layout_weight="1"
+                    android:layout_gravity="top"
+                    android:padding="8dp"
+                    android:background="@drawable/whitebar1"/>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/btnEditUserLastName"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/smalleditbutton"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mail ID:"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/editEditEmail"
+                    android:layout_weight="1"
+                    android:layout_gravity="top"
+                    android:padding="8dp"
+                    android:background="@drawable/whitebar1"/>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/btnEditEmail"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/smalleditbutton"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of birth:"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/editEditDob"
+                    android:layout_weight="1"
+                    android:layout_gravity="top"
+                    android:padding="8dp"
+                    android:background="@drawable/whitebar1"/>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/btnEditDob"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/smalleditbutton"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blood pressure:"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/editEditBP"
+                    android:layout_weight="1"
+                    android:layout_gravity="top"
+                    android:padding="8dp"
+                    android:background="@drawable/whitebar1"/>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/btnEditBP"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/smalleditbutton"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Allergy:"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/editEditAllergy"
+                    android:layout_weight="1"
+                    android:layout_gravity="top"
+                    android:padding="8dp"
+                    android:background="@drawable/whitebar1"/>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/btnEditAllergy"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/smalleditbutton"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Health issues:"
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/editEditHealthIssues"
+                    android:layout_weight="1"
+                    android:layout_gravity="top"
+                    android:padding="8dp"
+                    android:background="@drawable/whitebar1"/>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/btnEditHealthIssues"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/smalleditbutton"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/btnEditUserInfoSave"
+                android:background="@drawable/btn8"
+                android:layout_marginTop="20dp"
+                android:text="Save"/>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

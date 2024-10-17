@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background6"
+    tools:context=".DonorRegistration">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv"
+                android:text="Donor Registration"
+                android:textSize="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextdonorUser"
+                android:hint="User Name"
+                android:layout_below="@id/tv"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:layout_marginTop="30dp"
+                android:maxLength="40"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/editTextdonorUser"
+                android:hint="Password"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:textStyle="bold"
+                android:inputType="textPassword"
+                android:id="@+id/editTextdonorPassword"
+                />
+            <EditText
+                android:layout_width="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:layout_below="@+id/editTextdonorPassword"
+                android:hint="Confirm Password"
+                android:textStyle="bold"
+                android:id="@+id/editTextdonorConfirmPassword"
+                />
+            <EditText
+                android:layout_width="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/editTextdonorConfirmPassword"
+                android:hint="Mobile Number"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:id="@+id/editTextdonorMobileNo"
+                />
+            <EditText
+                android:layout_width="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/editTextdonorMobileNo"
+                android:hint="Mail-ID"
+                android:inputType="textEmailAddress"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:maxLength="50"
+                android:id="@+id/editTextdonorMailId" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/editTextdonorMailId"
+                android:hint="Address"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:id="@+id/editTextdonorAddress"
+                />
+
+            <Spinner
+                android:layout_width="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextdonorAddress"
+                android:id="@+id/spinnerArea"
+                style="@style/spinner_style"
+                />
+            <Spinner
+                android:id="@+id/spinnerBlood1"
+                android:layout_below="@+id/spinnerArea"
+                android:layout_width="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                style="@style/spinner_style">
+            </Spinner>
+            <Spinner
+                android:layout_width="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerBlood1"
+                android:id="@+id/spinnerSubArea"
+                style="@style/spinner_style"
+                />
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button5"
+                android:id="@+id/buttondonorSubmit"
+                android:text="Register"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/spinnerSubArea"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

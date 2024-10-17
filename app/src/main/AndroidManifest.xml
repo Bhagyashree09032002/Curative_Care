@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.curativecare">
+
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.BATTERY_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission
+        android:name="android.permission.BROADCAST_PACKAGE_REMOVED"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission
+        android:name="android.permission.CALL_PRIVILEGED"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cv"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Welcome" />
+        <activity android:name=".Mainact" />
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".AdminRegistration" />
+        <activity android:name=".Register" />
+        <activity android:name=".UserMainPage" />
+        <activity android:name=".AdminMainPage" />
+        <activity android:name=".DoctorList" />
+        <activity android:name=".SetTimeDate" />
+        <activity android:name=".PendingRequest" />
+        <activity android:name=".AcceptedRejecteRequest" />
+        <activity android:name=".History" />
+        <activity android:name=".Search" />
+        <activity android:name=".UserHistory" />
+        <activity android:name=".DoctorQR" />
+        <activity android:name=".UserInfo" />
+        <activity android:name=".Medical" />
+        <activity android:name=".ScanQRCode" />
+        <activity android:name=".UserInfoMedical" />
+        <activity android:name=".FeedBack" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".UserHomepage" />
+        <activity android:name=".AddReport" />
+        <activity android:name=".EditDetails" />
+        <activity android:name=".ViewReport" />
+        <activity android:name=".ReportDetails" />
+
+        <service
+            android:name=".LocService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".RequestAmbulance" />
+        <activity android:name=".AmbulanceLogin" />
+        <activity android:name=".ViewRequest" />
+        <activity
+            android:name=".ViewRequestMap"
+            android:label="@string/title_activity_view_request_map"></activity>
+
+
+
+
+        <activity android:name=".DonorLogin" />
+        <activity android:name=".DonorRegistration" />
+        <activity android:name=".ViewUserList"/>
+        <activity android:name=".ViewDonorList"/>
+        <activity android:name=".DonorHomepage" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".BloodRequest" />
+
+    </application>
+
+</manifest>

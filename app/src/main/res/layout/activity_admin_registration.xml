@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_admin_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="15dp"
+    tools:context=".AdminRegistration">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextAdminUser"
+                android:hint="Doctor Name"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:maxLength="40"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/editTextAdminUser"
+                android:hint="Password"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:textStyle="bold"
+                android:inputType="textPassword"
+                android:id="@+id/editTextAdminPassword"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:layout_below="@+id/editTextAdminPassword"
+                android:hint="Confirm Password"
+                android:textStyle="bold"
+                android:id="@+id/editTextAdminConfirmPassword"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/editTextAdminConfirmPassword"
+                android:hint="Mobile Number"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:id="@+id/editTextAdminMobileNo"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/editTextAdminMobileNo"
+                android:hint="Mail-ID"
+                android:inputType="textEmailAddress"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:maxLength="50"
+                android:id="@+id/editTextAdminMailId"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/editTextAdminMailId"
+                android:hint="Hospital Name"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:maxLength="50"
+                android:id="@+id/editTextAdminShopName"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/editTextAdminShopName"
+                android:hint="Specialization"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:maxLength="30"
+                android:id="@+id/editTextSpecialist"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:layout_below="@+id/editTextSpecialist"
+                android:hint="Click here to select symptoms for specialist in"
+                android:textStyle="bold"
+                android:id="@+id/editTextOthers"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerDoctorExperience"
+                style="@style/spinner_style"
+                android:layout_below="@+id/editTextOthers"></Spinner>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/spinnerDoctorExperience"
+                android:hint="Address"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:id="@+id/editTextAdminAddress"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextAdminAddress"
+                android:id="@+id/spinnerArea"
+                style="@style/spinner_style"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerArea"
+                android:id="@+id/spinnerSubArea"
+                style="@style/spinner_style"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:text="Register"
+                android:textStyle="bold"
+                android:background="@drawable/button"
+                android:id="@+id/buttonAdminSubmit"
+                android:layout_below="@+id/spinnerSubArea"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

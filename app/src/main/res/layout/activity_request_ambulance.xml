@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".RequestAmbulance">
+
+    <TextView
+        android:id="@+id/tvamb"
+        android:text="Send Request"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvsh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Hospital"
+        android:layout_below="@id/tvamb"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="20dp"/>
+
+    <Spinner
+        android:layout_width="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="30dp"
+        android:background="#1010"
+        android:layout_below="@id/tvamb"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:id="@+id/spinnerAmb" />
+
+    <TextView
+        android:id="@+id/tvfr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add First-Aid\nRequirements"
+        android:layout_below="@id/tvsh"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/editFirstAid"
+        android:layout_width="180dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:lines="3"
+        android:layout_below="@id/spinnerAmb"
+        android:layout_alignParentRight="true"
+        android:layout_height="80dp" />
+
+    <Button
+        android:id="@+id/reqAmb"
+        android:layout_below="@id/editFirstAid"
+        android:layout_marginTop="50dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/help"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

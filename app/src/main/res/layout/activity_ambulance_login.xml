@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".AmbulanceLogin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Driver Login"
+        android:textStyle="bold"
+        android:textColor="#123"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textviewheading"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/textviewheading"
+        android:layout_marginTop="50dp"
+        android:maxLines="1"
+        android:hint="Mobile Number"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:id="@+id/editUser"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Password"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:layout_below="@id/editUser"
+        android:id="@+id/editPass"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPass"
+        android:id="@+id/linearLayout"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:background="@drawable/button"
+            android:id="@+id/buttonLogin"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bloodChnageUserProfile"
+        android:textAlignment="center"
+        android:text="Change User Profile"
+        android:layout_marginTop="25dp"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
